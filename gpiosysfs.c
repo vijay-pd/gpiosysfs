@@ -27,8 +27,7 @@ int main(int argc, char *argv[])
 	
 		}
 
-	do{
-		//snprintf(buffer, 1, "%d", repeat%2);	
+	do{	
 		if(1 != write(fd, "1", 1)) {
 			fprintf(stderr, "Failed to write to led\n");
 			return (-1);	
